@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,200..900;1,200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=UnifrakturMaguntia&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Libre Franklin", system-ui, -apple-system, sans-serif;
+  --font-gothic: "UnifrakturMaguntia", serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/* Custom Utilities */
+@utility border-double-bottom {
+  border-bottom-style: double;
+  border-bottom-width: 4px;
+}
+
+@utility border-double-top {
+  border-top-style: double;
+  border-top-width: 4px;
+}
+
+/* Fine-tune layout */
+body {
+  font-family: var(--font-sans);
+  background-color: #fcfcfc;
+  color: #121212;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom classes for NYT editorial feel */
+.nyt-dropcap::first-letter {
+  float: left;
+  font-family: var(--font-serif);
+  font-size: 4.75rem;
+  line-height: 4rem;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-weight: bold;
+  color: #121212;
+}
+
+/* Custom scrollbar hide */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

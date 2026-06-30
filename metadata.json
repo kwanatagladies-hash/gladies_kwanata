@@ -1,0 +1,6 @@
+{
+  "name": "The New York Times",
+  "description": "A beautifully crafted, fully interactive digital edition of The New York Times with live breaking news, custom reading modes, offline bookmarks, audio storytelling, and complete search.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
